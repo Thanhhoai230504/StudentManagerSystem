@@ -1,5 +1,6 @@
 package view;
 
+import client.ClientService;
 import controller.ReportController;
 import javax.swing.*;
 import javax.swing.border.*;
@@ -7,7 +8,7 @@ import java.awt.*;
 import java.util.Map;
 
 /**
- * Panel báo cáo và thống kê - MODERN DESIGN
+ * Panel báo cáo và thống kê - CLIENT-SERVER VERSION
  */
 public class ReportPanel extends JPanel {
     private ReportController controller;
@@ -22,8 +23,9 @@ public class ReportPanel extends JPanel {
     private final Color LIGHT_BG = new Color(236, 240, 241);
     private final Color CARD_BG = Color.WHITE;
     
-    public ReportPanel() {
-        controller = new ReportController();
+    // CONSTRUCTOR MỚI - NHẬN ClientService
+    public ReportPanel(ClientService clientService) {
+        controller = new ReportController(clientService);
         initComponents();
     }
     
@@ -484,5 +486,8 @@ public class ReportPanel extends JPanel {
         cardLayout.show(mainContentPanel, "dashboard");
         mainContentPanel.revalidate();
         mainContentPanel.repaint();
+    }
+    public void xuatBaoCao() {
+        xuatBaoCaoJSON();
     }
 }

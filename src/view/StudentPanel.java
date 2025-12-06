@@ -1,5 +1,6 @@
 package view;
 
+import client.ClientService;
 import controller.StudentController;
 import controller.ClassController;
 import model.SinhVien;
@@ -12,7 +13,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 /**
- * Panel quản lý sinh viên - FIXED VERSION
+ * Panel quản lý sinh viên - CLIENT-SERVER VERSION
  */
 public class StudentPanel extends JPanel {
     private StudentController controller;
@@ -25,11 +26,12 @@ public class StudentPanel extends JPanel {
     private JComboBox<String> cboGioiTinh, cboLop;
     private JButton btnThem, btnSua, btnXoa, btnLamMoi, btnTimKiem, btnDongBoJSON;
     
-    private String mssvCu = null; // Lưu MSSV cũ khi đang sửa
+    private String mssvCu = null;
     
-    public StudentPanel() {
-        controller = new StudentController();
-        classController = new ClassController();
+    // CONSTRUCTOR MỚI - NHẬN ClientService
+    public StudentPanel(ClientService clientService) {
+        controller = new StudentController(clientService);
+        classController = new ClassController(clientService);
         initComponents();
         loadData();
         loadLopHoc();

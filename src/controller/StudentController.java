@@ -1,71 +1,105 @@
 package controller;
 
-import dao.StudentDAO;
-import dao.JsonStudentDAO;
+import client.ClientService;
 import model.SinhVien;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Controller xử lý logic nghiệp vụ cho Sinh viên
- */
 public class StudentController {
-    private StudentDAO sqlDAO;
-    private JsonStudentDAO jsonDAO;
+    private ClientService clientService;
     
-    public StudentController() {
-        this.sqlDAO = new StudentDAO();
-        this.jsonDAO = new JsonStudentDAO();
+    public StudentController(ClientService clientService) {
+        this.clientService = clientService;
     }
     
     public boolean themSinhVien(SinhVien sv) {
-        boolean success = sqlDAO.themSinhVien(sv);
-        if (success) {
-            jsonDAO.dongBoTuMySQL(); // Đồng bộ sang JSON
+        try {
+            return clientService.themSinhVien(sv);
+        } catch (IOException e) {
+            handleError("Lỗi thêm sinh viên", e);
+            return false;
         }
-        return success;
     }
     
     public boolean capNhatSinhVien(SinhVien sv) {
-        boolean success = sqlDAO.capNhatSinhVien(sv);
-        if (success) {
-            jsonDAO.dongBoTuMySQL();
+        try {
+            return clientService.capNhatSinhVien(sv);
+        } catch (IOException e) {
+            handleError("Lỗi cập nhật sinh viên", e);
+            return false;
         }
-        return success;
     }
     
     public boolean xoaSinhVien(int id, String mssv) {
-        boolean success = sqlDAO.xoaSinhVien(id);
-        if (success) {
-            jsonDAO.xoaSinhVien(mssv);
+        try {
+            return clientService.xoaSinhVien(id, mssv);
+        } catch (IOException e) {
+            handleError("Lỗi xóa sinh viên", e);
+            return false;
         }
-        return success;
     }
     
     public List<SinhVien> layTatCaSinhVien() {
-        return sqlDAO.layTatCaSinhVien();
+        try {
+            List<SinhVien> result = clientService.layTatCaSinhVien();
+            return (result != null) ? result : new ArrayList<>();  // ← FIX
+        } catch (IOException e) {
+            handleError("Lỗi lấy danh sách sinh viên", e);
+            return new ArrayList<>();  // ← FIX
+        }
     }
     
     public SinhVien timTheoMSSV(String mssv) {
-        return sqlDAO.timTheoMSSV(mssv);
+        try {
+            return clientService.timTheoMSSV(mssv);
+        } catch (IOException e) {
+            handleError("Lỗi tìm sinh viên", e);
+            return null;
+        }
     }
     
     public List<SinhVien> timKiemTheoTen(String ten) {
-        return sqlDAO.timKiemTheoTen(ten);
+        try {
+            List<SinhVien> result = clientService.timKiemTheoTen(ten);
+            return (result != null) ? result : new ArrayList<>();  // ← FIX
+        } catch (IOException e) {
+            handleError("Lỗi tìm kiếm", e);
+            return new ArrayList<>();  // ← FIX
+        }
     }
     
     public List<SinhVien> laySinhVienTheoLop(String maLop) {
-        return sqlDAO.laySinhVienTheoLop(maLop);
-    }
-    
-    public List<SinhVien> laySinhVienTheoGioiTinh(String gioiTinh) {
-        return sqlDAO.laySinhVienTheoGioiTinh(gioiTinh);
+        try {
+            List<SinhVien> result = clientService.laySinhVienTheoLop(maLop);
+            return (result != null) ? result : new ArrayList<>();  // ← FIX
+        } catch (IOException e) {
+            handleError("Lỗi lấy sinh viên theo lớp", e);
+            return new ArrayList<>();  // ← FIX
+        }
     }
     
     public List<SinhVien> layDuLieuJSON() {
-        return jsonDAO.docTuJSON();
+        try {
+            List<SinhVien> result = clientService.layDuLieuJSON();
+            return (result != null) ? result : new ArrayList<>();  // ← FIX
+        } catch (IOException e) {
+            handleError("Lỗi đọc JSON", e);
+            return new ArrayList<>();  // ← FIX
+        }
     }
     
     public boolean dongBoJSON() {
-        return jsonDAO.dongBoTuMySQL();
+        try {
+            return clientService.dongBoJSON();
+        } catch (IOException e) {
+            handleError("Lỗi đồng bộ JSON", e);
+            return false;
+        }
+    }
+    
+    private void handleError(String message, Exception e) {
+        System.err.println(message + ": " + e.getMessage());
+        e.printStackTrace();  // ← THÊM để thấy lỗi chi tiết
     }
 }

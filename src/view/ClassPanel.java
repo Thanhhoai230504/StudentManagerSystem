@@ -1,5 +1,6 @@
 package view;
 
+import client.ClientService;
 import controller.ClassController;
 import controller.StudentController;
 import model.Lop;
@@ -10,7 +11,7 @@ import java.awt.*;
 import java.util.List;
 
 /**
- * Panel quản lý lớp học - FIXED VERSION
+ * Panel quản lý lớp học - CLIENT-SERVER VERSION
  */
 public class ClassPanel extends JPanel {
     private ClassController controller;
@@ -18,11 +19,12 @@ public class ClassPanel extends JPanel {
     private JTable table;
     private DefaultTableModel tableModel;
     private JTextField txtMaLop, txtTenLop;
-    private String maLopCu = null; // Lưu mã lớp cũ khi sửa
+    private String maLopCu = null;
     
-    public ClassPanel() {
-        controller = new ClassController();
-        studentController = new StudentController();
+    // Constructor mới nhận ClientService
+    public ClassPanel(ClientService clientService) {
+        controller = new ClassController(clientService);
+        studentController = new StudentController(clientService);
         initComponents();
         loadData();
     }
@@ -276,9 +278,9 @@ public class ClassPanel extends JPanel {
             // Lưu mã lớp cũ
             maLopCu = maLop;
             
-            // Disable mã lớp khi đang sửa (tùy chọn)
-             txtMaLop.setEditable(false);
-             txtMaLop.setBackground(Color.LIGHT_GRAY);
+            // Disable mã lớp khi đang sửa
+            txtMaLop.setEditable(false);
+            txtMaLop.setBackground(Color.LIGHT_GRAY);
         }
     }
     
@@ -325,4 +327,3 @@ public class ClassPanel extends JPanel {
         loadData();
     }
 }
-

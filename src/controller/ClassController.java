@@ -1,36 +1,73 @@
 package controller;
 
-import dao.ClassDAO;
+import client.ClientService;
 import model.Lop;
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Controller xử lý logic nghiệp vụ cho Lớp
+ * ClassController - Phía Client
  */
 public class ClassController {
-    private ClassDAO dao;
+    private ClientService clientService;
     
-    public ClassController() {
-        this.dao = new ClassDAO();
+    // CONSTRUCTOR NÀY PHẢI CÓ!!!
+    public ClassController(ClientService clientService) {
+        this.clientService = clientService;
     }
     
     public boolean themLop(Lop lop) {
-        return dao.themLop(lop);
+        try {
+            return clientService.themLop(lop);
+        } catch (IOException e) {
+            handleError("Lỗi thêm lớp", e);
+            return false;
+        }
     }
     
     public boolean capNhatLop(Lop lop) {
-        return dao.capNhatLop(lop);
+        try {
+            return clientService.capNhatLop(lop);
+        } catch (IOException e) {
+            handleError("Lỗi cập nhật lớp", e);
+            return false;
+        }
     }
     
     public boolean xoaLop(String maLop) {
-        return dao.xoaLop(maLop);
+        try {
+            return clientService.xoaLop(maLop);
+        } catch (IOException e) {
+            handleError("Lỗi xóa lớp", e);
+            return false;
+        }
     }
     
     public List<Lop> layTatCaLop() {
-        return dao.layTatCaLop();
+        try {
+            List<Lop> result = clientService.layTatCaLop();
+            return (result != null) ? result : new ArrayList<>();  // ← FIX
+        } catch (IOException e) {
+            handleError("Lỗi lấy danh sách lớp", e);
+            return new ArrayList<>();  // ← FIX
+        }
     }
     
     public Lop timLop(String maLop) {
-        return dao.timLop(maLop);
+        try {
+            List<Lop> allClasses = clientService.layTatCaLop();
+            return allClasses.stream()
+                .filter(lop -> lop.getMaLop().equals(maLop))
+                .findFirst()
+                .orElse(null);
+        } catch (IOException e) {
+            handleError("Lỗi tìm lớp", e);
+            return null;
+        }
+    }
+    
+    private void handleError(String message, Exception e) {
+        System.err.println(message + ": " + e.getMessage());
     }
 }

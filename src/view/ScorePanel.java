@@ -1,5 +1,6 @@
 package view;
 
+import client.ClientService;
 import controller.ScoreController;
 import controller.StudentController;
 import model.Diem;
@@ -10,7 +11,7 @@ import java.awt.*;
 import java.util.List;
 
 /**
- * Panel quản lý điểm
+ * Panel quản lý điểm - CLIENT-SERVER VERSION
  */
 public class ScorePanel extends JPanel {
     private ScoreController controller;
@@ -20,9 +21,10 @@ public class ScorePanel extends JPanel {
     private JComboBox<String> cboSinhVien;
     private JTextField txtMonHoc, txtDiemQT, txtDiemThi, txtDiemTK;
     
-    public ScorePanel() {
-        controller = new ScoreController();
-        studentController = new StudentController();
+    // CONSTRUCTOR MỚI - NHẬN ClientService
+    public ScorePanel(ClientService clientService) {
+        controller = new ScoreController(clientService);
+        studentController = new StudentController(clientService);
         initComponents();
         loadSinhVien();
         loadData();
