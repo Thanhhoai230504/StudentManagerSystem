@@ -1,0 +1,456 @@
+{
+  "thong_ke_theo_lop": [
+    {
+      "si_so": 4,
+      "ma_lop": "CNTT1",
+      "diem_trung_binh": 8.83,
+      "gioi_tinh": {
+        "nu": 2,
+        "nam": 2
+      },
+      "xep_loai": "Giỏi",
+      "ten_lop": "Công nghệ Thông tin 1"
+    },
+    {
+      "si_so": 3,
+      "ma_lop": "CNTT2",
+      "diem_trung_binh": 7.72,
+      "gioi_tinh": {
+        "nu": 2,
+        "nam": 1
+      },
+      "xep_loai": "Khá",
+      "ten_lop": "Công nghệ Thông tin 2"
+    },
+    {
+      "si_so": 3,
+      "ma_lop": "KTPM1",
+      "diem_trung_binh": 8.68,
+      "gioi_tinh": {
+        "nu": 1,
+        "nam": 2
+      },
+      "xep_loai": "Giỏi",
+      "ten_lop": "Kỹ thuật Phần mềm 1"
+    },
+    {
+      "si_so": 3,
+      "ma_lop": "KTPM2",
+      "diem_trung_binh": 8.5,
+      "gioi_tinh": {
+        "nu": 2,
+        "nam": 1
+      },
+      "xep_loai": "Giỏi",
+      "ten_lop": "Kỹ thuật Phần mềm 2"
+    },
+    {
+      "si_so": 3,
+      "ma_lop": "MMT1",
+      "diem_trung_binh": 8.1,
+      "gioi_tinh": {
+        "nu": 1,
+        "nam": 2
+      },
+      "xep_loai": "Giỏi",
+      "ten_lop": "Mạng Máy tính"
+    }
+  ],
+  "metadata": {
+    "ngay_xuat": "04/12/2025 12:13:58",
+    "phien_ban": "1.0",
+    "he_thong": "Student Manager System",
+    "tieu_de": "Báo cáo Hệ thống Quản lý Sinh viên"
+  },
+  "danh_sach_sinh_vien": [
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Cơ sở dữ liệu",
+          "diem_qua_trinh": 7.5,
+          "diem_tong_ket": 8.6,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        },
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 8.5,
+          "diem_tong_ket": 8.9,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        },
+        {
+          "mon_hoc": "Mạng máy tính",
+          "diem_qua_trinh": 8.0,
+          "diem_tong_ket": 8.4,
+          "diem_thi": 8.5,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "CNTT1",
+      "so_mon_hoc": 3,
+      "ho_ten": "Nguyễn Văn An",
+      "ngay_sinh": "15/01/2003",
+      "diem_trung_binh": 8.63,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nam",
+      "mssv": "SV001",
+      "id": 1
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Cơ sở dữ liệu",
+          "diem_qua_trinh": 8.5,
+          "diem_tong_ket": 8.9,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        },
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 9.0,
+          "diem_tong_ket": 9.4,
+          "diem_thi": 9.5,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "CNTT1",
+      "so_mon_hoc": 2,
+      "ho_ten": "Trần Thị Bích",
+      "ngay_sinh": "20/03/2003",
+      "diem_trung_binh": 9.15,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV002",
+      "id": 2
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Cơ sở dữ liệu",
+          "diem_qua_trinh": 8.0,
+          "diem_tong_ket": 7.7,
+          "diem_thi": 7.5,
+          "xep_loai": "Khá"
+        },
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 7.0,
+          "diem_tong_ket": 7.4,
+          "diem_thi": 7.5,
+          "xep_loai": "Khá"
+        }
+      ],
+      "ma_lop": "CNTT2",
+      "so_mon_hoc": 2,
+      "ho_ten": "Lê Văn Cường",
+      "ngay_sinh": "10/05/2003",
+      "diem_trung_binh": 7.55,
+      "xep_loai_chung": "Khá",
+      "gioi_tinh": "Nam",
+      "mssv": "SV003",
+      "id": 3
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 8.5,
+          "diem_tong_ket": 8.1,
+          "diem_thi": 8.0,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "CNTT2",
+      "so_mon_hoc": 1,
+      "ho_ten": "Phạm Thị Dung",
+      "ngay_sinh": "25/07/2003",
+      "diem_trung_binh": 8.1,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV004",
+      "id": 4
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Kỹ thuật phần mềm",
+          "diem_qua_trinh": 8.5,
+          "diem_tong_ket": 8.9,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        },
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 9.0,
+          "diem_tong_ket": 9.0,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "KTPM1",
+      "so_mon_hoc": 2,
+      "ho_ten": "Hoàng Văn Em",
+      "ngay_sinh": "14/02/2003",
+      "diem_trung_binh": 8.95,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nam",
+      "mssv": "SV005",
+      "id": 5
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Lập trình Java",
+          "diem_qua_trinh": 7.5,
+          "diem_tong_ket": 8.2,
+          "diem_thi": 8.5,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "KTPM1",
+      "so_mon_hoc": 1,
+      "ho_ten": "Vũ Thị Phương",
+      "ngay_sinh": "18/04/2003",
+      "diem_trung_binh": 8.2,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV006",
+      "id": 6
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Kỹ thuật phần mềm",
+          "diem_qua_trinh": 8.0,
+          "diem_tong_ket": 8.4,
+          "diem_thi": 8.5,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "KTPM2",
+      "so_mon_hoc": 1,
+      "ho_ten": "Đỗ Văn Giang",
+      "ngay_sinh": "22/06/2003",
+      "diem_trung_binh": 8.4,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nam",
+      "mssv": "SV007",
+      "id": 7
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Kỹ thuật phần mềm",
+          "diem_qua_trinh": 9.0,
+          "diem_tong_ket": 8.6,
+          "diem_thi": 8.5,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "KTPM2",
+      "so_mon_hoc": 1,
+      "ho_ten": "Ngô Thị Hà",
+      "ngay_sinh": "30/08/2003",
+      "diem_trung_binh": 8.6,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV008",
+      "id": 8
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Mạng máy tính",
+          "diem_qua_trinh": 8.5,
+          "diem_tong_ket": 8.9,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "MMT1",
+      "so_mon_hoc": 1,
+      "ho_ten": "Bùi Văn Ích",
+      "ngay_sinh": "05/09/2003",
+      "diem_trung_binh": 8.9,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nam",
+      "mssv": "SV009",
+      "id": 9
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Mạng máy tính",
+          "diem_qua_trinh": 7.0,
+          "diem_tong_ket": 7.4,
+          "diem_thi": 7.5,
+          "xep_loai": "Khá"
+        }
+      ],
+      "ma_lop": "MMT1",
+      "so_mon_hoc": 1,
+      "ho_ten": "Đinh Thị Kim",
+      "ngay_sinh": "12/11/2003",
+      "diem_trung_binh": 7.4,
+      "xep_loai_chung": "Khá",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV010",
+      "id": 10
+    },
+    {
+      "diem_so": [],
+      "ma_lop": "CNTT1",
+      "so_mon_hoc": 0,
+      "ho_ten": "Trịnh Văn Long",
+      "ngay_sinh": "28/01/2003",
+      "diem_trung_binh": 0,
+      "xep_loai_chung": "Chưa có điểm",
+      "gioi_tinh": "Nam",
+      "mssv": "SV011",
+      "id": 11
+    },
+    {
+      "diem_so": [],
+      "ma_lop": "CNTT2",
+      "so_mon_hoc": 0,
+      "ho_ten": "Mai Thị Mai",
+      "ngay_sinh": "15/03/2003",
+      "diem_trung_binh": 0,
+      "xep_loai_chung": "Chưa có điểm",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV012",
+      "id": 12
+    },
+    {
+      "diem_so": [],
+      "ma_lop": "KTPM1",
+      "so_mon_hoc": 0,
+      "ho_ten": "Lý Văn Nam",
+      "ngay_sinh": "20/05/2003",
+      "diem_trung_binh": 0,
+      "xep_loai_chung": "Chưa có điểm",
+      "gioi_tinh": "Nam",
+      "mssv": "SV013",
+      "id": 13
+    },
+    {
+      "diem_so": [],
+      "ma_lop": "KTPM2",
+      "so_mon_hoc": 0,
+      "ho_ten": "Võ Thị Oanh",
+      "ngay_sinh": "08/07/2003",
+      "diem_trung_binh": 0,
+      "xep_loai_chung": "Chưa có điểm",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV014",
+      "id": 14
+    },
+    {
+      "diem_so": [],
+      "ma_lop": "MMT1",
+      "so_mon_hoc": 0,
+      "ho_ten": "Đặng Văn Phong",
+      "ngay_sinh": "17/09/2003",
+      "diem_trung_binh": 0,
+      "xep_loai_chung": "Chưa có điểm",
+      "gioi_tinh": "Nam",
+      "mssv": "SV015",
+      "id": 15
+    },
+    {
+      "diem_so": [
+        {
+          "mon_hoc": "Cơ sở dữ liệu",
+          "diem_qua_trinh": 9.0,
+          "diem_tong_ket": 9.0,
+          "diem_thi": 9.0,
+          "xep_loai": "Giỏi"
+        }
+      ],
+      "ma_lop": "CNTT1",
+      "so_mon_hoc": 1,
+      "ho_ten": "Nguyễn Thanh Hoài",
+      "ngay_sinh": "23/05/2004",
+      "diem_trung_binh": 9.0,
+      "xep_loai_chung": "Giỏi",
+      "gioi_tinh": "Nữ",
+      "mssv": "SV016",
+      "id": 25
+    }
+  ],
+  "thong_ke_tong_hop": {
+    "xep_loai_chung": {
+      "Khá": 3,
+      "Giỏi": 13,
+      "Yếu": 0,
+      "Trung bình": 0
+    },
+    "gioi_tinh": {
+      "ty_le_nam": 50.0,
+      "nu": 8,
+      "nam": 8,
+      "ty_le_nu": 50.0
+    },
+    "diem_trung_binh_toan_truong": 8.37
+  },
+  "thong_ke_theo_mon_hoc": [
+    {
+      "so_sinh_vien": 4,
+      "diem_cao_nhat": 9.0,
+      "mon_hoc": "Cơ sở dữ liệu",
+      "diem_trung_binh": 8.55,
+      "diem_thap_nhat": 7.65,
+      "phan_loai": {
+        "trung_binh": 0,
+        "kha": 1,
+        "yeu": 0,
+        "gioi": 3
+      }
+    },
+    {
+      "so_sinh_vien": 3,
+      "diem_cao_nhat": 8.85,
+      "mon_hoc": "Kỹ thuật phần mềm",
+      "diem_trung_binh": 8.63,
+      "diem_thap_nhat": 8.35,
+      "phan_loai": {
+        "trung_binh": 0,
+        "kha": 0,
+        "yeu": 0,
+        "gioi": 3
+      }
+    },
+    {
+      "so_sinh_vien": 6,
+      "diem_cao_nhat": 9.35,
+      "mon_hoc": "Lập trình Java",
+      "diem_trung_binh": 8.5,
+      "diem_thap_nhat": 7.35,
+      "phan_loai": {
+        "trung_binh": 0,
+        "kha": 1,
+        "yeu": 0,
+        "gioi": 5
+      }
+    },
+    {
+      "so_sinh_vien": 3,
+      "diem_cao_nhat": 8.85,
+      "mon_hoc": "Mạng máy tính",
+      "diem_trung_binh": 8.23,
+      "diem_thap_nhat": 7.35,
+      "phan_loai": {
+        "trung_binh": 0,
+        "kha": 1,
+        "yeu": 0,
+        "gioi": 2
+      }
+    }
+  ],
+  "tong_quan": {
+    "tong_sinh_vien": 16,
+    "tong_lop": 5,
+    "si_so_trung_binh": 3.2
+  }
+}

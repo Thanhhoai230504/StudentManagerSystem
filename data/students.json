@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "mssv": "SV001",
+    "hoTen": "Nguyễn Văn An",
+    "ngaySinh": "2003-01-15",
+    "gioiTinh": "Nam",
+    "maLop": "CNTT1"
+  },
+  {
+    "id": 2,
+    "mssv": "SV002",
+    "hoTen": "Trần Thị Bích",
+    "ngaySinh": "2003-03-20",
+    "gioiTinh": "Nữ",
+    "maLop": "CNTT1"
+  },
+  {
+    "id": 3,
+    "mssv": "SV003",
+    "hoTen": "Lê Văn Cường",
+    "ngaySinh": "2003-05-10",
+    "gioiTinh": "Nam",
+    "maLop": "CNTT2"
+  },
+  {
+    "id": 4,
+    "mssv": "SV004",
+    "hoTen": "Phạm Thị Dung",
+    "ngaySinh": "2003-07-25",
+    "gioiTinh": "Nữ",
+    "maLop": "CNTT2"
+  },
+  {
+    "id": 5,
+    "mssv": "SV005",
+    "hoTen": "Hoàng Văn Em",
+    "ngaySinh": "2003-02-14",
+    "gioiTinh": "Nam",
+    "maLop": "KTPM1"
+  },
+  {
+    "id": 6,
+    "mssv": "SV006",
+    "hoTen": "Vũ Thị Phương",
+    "ngaySinh": "2003-04-18",
+    "gioiTinh": "Nữ",
+    "maLop": "KTPM1"
+  },
+  {
+    "id": 7,
+    "mssv": "SV007",
+    "hoTen": "Đỗ Văn Giang",
+    "ngaySinh": "2003-06-22",
+    "gioiTinh": "Nam",
+    "maLop": "KTPM2"
+  },
+  {
+    "id": 8,
+    "mssv": "SV008",
+    "hoTen": "Ngô Thị Hà",
+    "ngaySinh": "2003-08-30",
+    "gioiTinh": "Nữ",
+    "maLop": "KTPM2"
+  },
+  {
+    "id": 9,
+    "mssv": "SV009",
+    "hoTen": "Bùi Văn Ích",
+    "ngaySinh": "2003-09-05",
+    "gioiTinh": "Nam",
+    "maLop": "MMT1"
+  },
+  {
+    "id": 10,
+    "mssv": "SV010",
+    "hoTen": "Đinh Thị Kim",
+    "ngaySinh": "2003-11-12",
+    "gioiTinh": "Nữ",
+    "maLop": "MMT1"
+  },
+  {
+    "id": 11,
+    "mssv": "SV011",
+    "hoTen": "Trịnh Văn Long",
+    "ngaySinh": "2003-01-28",
+    "gioiTinh": "Nam",
+    "maLop": "CNTT1"
+  },
+  {
+    "id": 12,
+    "mssv": "SV012",
+    "hoTen": "Mai Thị Mai",
+    "ngaySinh": "2003-03-15",
+    "gioiTinh": "Nữ",
+    "maLop": "CNTT2"
+  },
+  {
+    "id": 13,
+    "mssv": "SV013",
+    "hoTen": "Lý Văn Nam",
+    "ngaySinh": "2003-05-20",
+    "gioiTinh": "Nam",
+    "maLop": "KTPM1"
+  },
+  {
+    "id": 14,
+    "mssv": "SV014",
+    "hoTen": "Võ Thị Oanh",
+    "ngaySinh": "2003-07-08",
+    "gioiTinh": "Nữ",
+    "maLop": "KTPM2"
+  },
+  {
+    "id": 15,
+    "mssv": "SV015",
+    "hoTen": "Đặng Văn Phong",
+    "ngaySinh": "2003-09-17",
+    "gioiTinh": "Nam",
+    "maLop": "MMT1"
+  },
+  {
+    "id": 25,
+    "mssv": "SV016",
+    "hoTen": "Nguyễn Thanh Hoài",
+    "ngaySinh": "2004-05-23",
+    "gioiTinh": "Nữ",
+    "maLop": "CNTT1"
+  }
+]
